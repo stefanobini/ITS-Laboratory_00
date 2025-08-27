@@ -1,0 +1,19 @@
+### REST Client examples (VS Code extension: REST Client)
+
+@host = http://127.0.0.1:8000
+
+GET {{host}}/health
+
+### KPI — stock
+GET {{host}}/kpi/stock
+
+### Movements — IN (placeholder)
+POST {{host}}/movements
+Content-Type: application/json
+
+{
+  "type": "IN",
+  "product_id": 1,
+  "qty": 10,
+  "to_location_id": 1
+}

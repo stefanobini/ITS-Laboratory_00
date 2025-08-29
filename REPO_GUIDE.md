@@ -54,6 +54,8 @@ When you change something in `app/models.py` (schema), you also update:
 python -m venv .venv
 # Windows
 .venv\Scripts\activate
+# (if PSSecurityException for UnauthorizedAccess, open the terminal as admin and use the following command then, again, '.venv\Scripts\activate')
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
 # macOS/Linux
 source .venv/bin/activate
 

@@ -51,11 +51,12 @@ When you change something in `app/models.py` (schema), you also update:
 ## 2) Quick Start — “How to run it locally”
 
 ```bash
-python -m venv .venv
+py -3.10 -m venv .itsLab_venv
 # Windows
-.venv\Scripts\activate
+.itsLab_venv\Scripts\activate
 # (if PSSecurityException for UnauthorizedAccess, open the terminal as admin and use the following command then, again, '.venv\Scripts\activate')
 Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+
 # macOS/Linux
 source .venv/bin/activate
 
